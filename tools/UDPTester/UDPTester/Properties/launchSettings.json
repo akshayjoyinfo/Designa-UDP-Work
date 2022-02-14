@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "UDPTester": {
+      "commandName": "Project",
+      "commandLineArgs": "UDPInput.txt"
+    }
+  }
+}
