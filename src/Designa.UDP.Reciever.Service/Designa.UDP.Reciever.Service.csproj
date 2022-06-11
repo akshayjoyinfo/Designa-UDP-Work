@@ -8,24 +8,87 @@
 
 	<ItemGroup>
 		<None Remove="appsettings.json" />
+		<None Remove="lib\acccert.key" />
+		<None Remove="lib\acccert.pem" />
+		<None Remove="lib\BouncyCastle.Crypto.dll" />
+		<None Remove="lib\keykey.pem" />
+		<None Remove="lib\libcrypto-1_1-x64.dll" />
+		<None Remove="lib\libcurl.dll" />
+		<None Remove="lib\libssl-1_1-x64.dll" />
+		<None Remove="lib\msvcr100.dll" />
+		<None Remove="lib\msvcr110.dll" />
+		<None Remove="lib\msvcr120.dll" />
+		<None Remove="lib\proxy.conf" />
+		<None Remove="lib\proxy.exe" />
+		<None Remove="lib\YQNetCom.dll" />
+		<None Remove="lib\YQNetCom.h" />
+		<None Remove="lib\YQNetCom.lib" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<EmbeddedResource Include="appsettings.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</EmbeddedResource>
+		<EmbeddedResource Include="lib\acccert.key">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\acccert.pem">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\BouncyCastle.Crypto.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\keykey.pem">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\libcrypto-1_1-x64.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\libcurl.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\libssl-1_1-x64.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\msvcr100.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\msvcr110.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\msvcr120.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\proxy.conf">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\proxy.exe">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\YQNetCom.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\YQNetCom.h">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="lib\YQNetCom.lib">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CsvHelper" Version="27.2.1" />
 		<PackageReference Include="EFCore.NamingConventions" Version="1.1.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.4" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+		<PackageReference Include="Polly" Version="7.2.3" />
 		<PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
 		<PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
 		<PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
@@ -33,6 +96,7 @@
 		<PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
 		<PackageReference Include="Serilog.Sinks.File" Version="3.1.0" />
 		<PackageReference Include="Serilog.Sinks.Seq" Version="3.0.0" />
+		<PackageReference Include="System.ServiceModel.Http" Version="4.9.0" />
 		<PackageReference Include="Topper" Version="3.2.1" />
 	</ItemGroup>
 

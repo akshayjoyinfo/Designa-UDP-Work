@@ -242,6 +242,36 @@ namespace Designa.UDP.Reciever.Service.Migrations
 
                     b.ToTable("fastag_payments");
                 });
+
+            modelBuilder.Entity("Designa.UDP.Reciever.Service.Persistence.Entities.LaneConfiguration", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id")
+                        .HasColumnType("bigint")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("DisplayResetMessage")
+                        .HasColumnName("display_reset_message")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Ip")
+                        .HasColumnName("ip")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LaneId")
+                        .HasColumnName("lane_id")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("LastModifiedUtc")
+                        .HasColumnName("last_modified_utc")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.HasKey("Id")
+                        .HasName("pk_lane_configurations");
+
+                    b.ToTable("lane_configurations");
+                });
 #pragma warning restore 612, 618
         }
     }

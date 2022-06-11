@@ -22,12 +22,14 @@ namespace Designa.UDP.Reciever.Service.Services
         private readonly IPAddress _address;
 
         private readonly UDPMessageService _uDPMessageService;
+        private readonly LedService _ledService;
         public UDPReciever(IConfiguration configuration , ServiceCollection services)
         {
             _configuration = configuration;
             _services = services;
 
             _uDPMessageService = new UDPMessageService(_configuration, _services);
+            _ledService = new LedService(_configuration, _services);
 
             HandleService();
         }
@@ -79,6 +81,7 @@ namespace Designa.UDP.Reciever.Service.Services
                 {
                     if(result!= null && result.FastagEntry.TicketId!= null)
                     {
+                        _ledService.ShowDisplay(result);
                         _uDPMessageService.ProcessFastagEntryMessage(result, message);
                     }
                 }
@@ -87,6 +90,7 @@ namespace Designa.UDP.Reciever.Service.Services
                 {
                     if (paymentResult != null && paymentResult.FastagPayment.TicketId != null)
                     {
+                        _ledService.ShowDisplay(paymentResult);
                         _uDPMessageService.ProcessFastagPaymentMessage(paymentResult, message);
                     }
                 }

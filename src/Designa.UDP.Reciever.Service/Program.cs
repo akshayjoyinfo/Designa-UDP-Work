@@ -1,4 +1,5 @@
-﻿using Designa.UDP.Reciever.Service.Persistence;
+﻿using Designa.UDP.Reciever.Service.Application.Services;
+using Designa.UDP.Reciever.Service.Persistence;
 using Designa.UDP.Reciever.Service.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -25,12 +26,13 @@ namespace Designa.UDP.Reciever.Service
                 Log.Logger = new LoggerConfiguration()
                             .ReadFrom.Configuration(Configuration)
                             .CreateLogger();
-
                 var services = new ServiceCollection();
                 services.AddDbContext<UDPDbContext>(options =>
                 {
-                    options.UseNpgsql(Configuration.GetConnectionString("UDPDBConnection")).UseSnakeCaseNamingConvention();
-                    // options.EnableSensitiveDataLogging(); -- enable when u really want to see the Ef query generate logs
+                    var connString = Configuration.GetConnectionString("UDPDBConnection");
+                    var decryptedConnString = StringCipher.Decrypt(connString);
+                    options.UseNpgsql(decryptedConnString).UseSnakeCaseNamingConvention();
+                    options.EnableSensitiveDataLogging();
                 });
 
                 ServiceProvider serviceProvider = services.BuildServiceProvider();

@@ -5,7 +5,17 @@
       "ProjectGuid": "4b450f63-5679-41d8-a560-8fa739645c82",
       "DisplayName": "Designa.UDP.Reciever.Service",
       "ColorIndex": 0
+    },
+    "b8137be4-95ea-4448-9fac-3accb12c9a2b": {
+      "ProjectGuid": "b8137be4-95ea-4448-9fac-3accb12c9a2b",
+      "DisplayName": "Designa.UDP.ReportGenerator",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

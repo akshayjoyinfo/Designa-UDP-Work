@@ -13,7 +13,6 @@ D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\bin\Debug\netcoreapp
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp3.1\UDPTester.csproj.AssemblyReference.cache
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp3.1\UDPTester.GeneratedMSBuildEditorConfig.editorconfig
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp3.1\UDPTester.AssemblyInfoInputs.cache
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp3.1\UDPTester.AssemblyInfo.cs
@@ -24,3 +23,4 @@ D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp3.1\UDPTester.genruntimeconfig.cache
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\bin\Debug\netcoreapp3.1\Config.json
 D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\bin\Debug\netcoreapp3.1\Samples\data.txt
+D:\WORK\Designa\FastagIntegration\tools\UDPTester\UDPTester\obj\Debug\netcoreapp3.1\UDPTester.csproj.AssemblyReference.cache

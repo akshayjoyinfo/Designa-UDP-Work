@@ -1,0 +1,33 @@
+{
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "Seq",
+        "Args": {
+          "serverUrl": "http://localhost:5341",
+          "formatter": "Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact"
+        }
+      }
+    ],
+    "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId", "WithExceptionDetails" ],
+    "Properties": {
+      "Application": "UDP.ReportGenerator",
+      "Environment": "DEV"
+    }
+  },
+  "OutFolder": "D:\\WORK\\Designa\\FastagIntegration\\reports\\",
+  "ConnectionStrings": {
+    "UDPDBConnection": "W6mnscOpl348QpZjzhj3JeuUJXhmPRq0DVZrouy1D9T4HBwVJSCaMVtfoDJykpO4FOTynZMfjqBqLII+PEJsIPezhySjjmdvfGjmOUb0f7VhK0vr2Kcn9h7Bj9KdyzAEOoqEgAx4UdiSDkXve+TuUz+aZczmovwJIuK9W641J+vfb2QZHpIK1No2RwXknl7ublvfm1tZ3KXEXkPVooKTyuHbz7il2Xq49PN1272zGCfJ9XPP8UMDyLBtXDNNXBah9xsnANXMn2QolyFpIkWSekrno50P5eKOixFFwXsoqcTMRtm1XhYqF+ufJnl7zDmEcuz05NaNbNeR+mpnj2e3mwWUMjDftB54R9pG9bT2XnKT9gQEETleOfYsoB1wF9qu"
+  },
+  "LiveEventsFeedRowCount": 100
+}

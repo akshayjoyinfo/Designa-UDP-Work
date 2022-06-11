@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsvHelper.Configuration.Attributes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -15,7 +16,9 @@ namespace Designa.UDP.Reciever.Service.Persistence.Entities
         public string TransactionId { get; set; }
         public string TicketId { get; set; }
         public string CardTagNo { get; set; }
+        [Format("dd-MM-yyyy HH:mm:ss")]
         public DateTime? DateTimeOfEntry { get; set; }
+        [Format("dd-MM-yyyy HH:mm:ss")]
         public DateTime? DateTimeOfExit { get; set; }
         public string VehicleNumber { get; set; }
         public string EntryDeviceName { get; set; }
