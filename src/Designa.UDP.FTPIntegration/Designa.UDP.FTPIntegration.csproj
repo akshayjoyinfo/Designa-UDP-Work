@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FtpConfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="FtpConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Designa.UDP.Reciever.Service\Designa.UDP.Reciever.Service.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CsvHelper" Version="27.2.1" />
+	</ItemGroup>
+
+</Project>

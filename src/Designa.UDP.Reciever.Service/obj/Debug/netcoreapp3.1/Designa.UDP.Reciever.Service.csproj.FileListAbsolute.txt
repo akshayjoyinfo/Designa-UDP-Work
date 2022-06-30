@@ -119,3 +119,4 @@ D:\WORK\Designa\FastagIntegration\src\Designa.UDP.Reciever.Service\bin\Debug\net
 D:\WORK\Designa\FastagIntegration\src\Designa.UDP.Reciever.Service\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 D:\WORK\Designa\FastagIntegration\src\Designa.UDP.Reciever.Service\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\WORK\Designa\FastagIntegration\src\Designa.UDP.Reciever.Service\bin\Debug\netcoreapp3.1\CsvHelper.dll
+D:\WORK\Designa\FastagIntegration\src\Designa.UDP.Reciever.Service\obj\Debug\netcoreapp3.1\Designa.UDP.Reciever.Service.csproj.AssemblyReference.cache

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designa.UDP.Reciever.Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Designa.UDP.ReportGenerator", "Designa.UDP.ReportGenerator\Designa.UDP.ReportGenerator.csproj", "{B8137BE4-95EA-4448-9FAC-3ACCB12C9A2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Designa.UDP.FTPIntegration", "Designa.UDP.FTPIntegration\Designa.UDP.FTPIntegration.csproj", "{0688CE34-E83B-4B1A-B22A-4E82C79900EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B8137BE4-95EA-4448-9FAC-3ACCB12C9A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8137BE4-95EA-4448-9FAC-3ACCB12C9A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8137BE4-95EA-4448-9FAC-3ACCB12C9A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0688CE34-E83B-4B1A-B22A-4E82C79900EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0688CE34-E83B-4B1A-B22A-4E82C79900EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0688CE34-E83B-4B1A-B22A-4E82C79900EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0688CE34-E83B-4B1A-B22A-4E82C79900EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

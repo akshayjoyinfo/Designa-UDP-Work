@@ -15,7 +15,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "0688ce34-e83b-4b1a-b22a-4e82c79900ea": {
+      "ProjectGuid": "0688ce34-e83b-4b1a-b22a-4e82c79900ea",
+      "DisplayName": "Designa.UDP.FTPIntegration",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
